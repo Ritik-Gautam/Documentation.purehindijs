@@ -1,3 +1,3 @@
 # Documentation.purehindijs
 Documentation of purehindijs
-https://ritik-gautam.github.io/Documentation.purehindijs/
+https://github.com/Ritik-Gautam/purehindijs.git
