@@ -1,0 +1,136 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --heading-color: #61dafb;
+    --code-bg: #2a2a2a;
+    --code-color: #f8f8f2;
+    --button-bg: #61dafb;
+    --button-color: #1a1a1a;
+    --button-hover: #4fa8d5;
+    --table-border: #444;
+    --table-header-bg: #2a2a2a;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: var(--heading-color);
+}
+
+
+
+main {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--heading-color);
+}
+
+pre {
+    background-color: var(--code-bg);
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Fira Code', monospace;
+    color: var(--code-color);
+}
+
+.keyword-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.keyword-section h3 {
+    color: var(--heading-color);
+}
+
+.keyword-section pre {
+    position: relative;
+}
+
+.copy-btn {
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.copy-btn:hover {
+    background-color: var(--button-hover);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .keyword-section {
+        padding: 15px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a; /* Footer background color */
+    color: #e0e0e0; /* Footer text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-icons {
+    margin-bottom: 10px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-icons img {
+    width: 30px; /* Size of the icons */
+    height: 30px;
+    filter: invert(100%); /* Invert colors for dark background */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2); /* Enlarge the icons slightly on hover */
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem; /* Font size for the copyright text */
+}

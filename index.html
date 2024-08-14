@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureHindiJS Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header>
+        <h1>PureHindiJS Documentation</h1>
+        
+    </header>
+    <main>
+          
+      
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>PureHindiJS is a JavaScript library that allows developers to write JavaScript code in Hindi. 
+            It maps Hindi keywords to their JavaScript equivalents, making coding in Hindi easy and intuitive. 
+            This documentation will guide you through the installation, usage, and details of each supported keyword.</p>
+        </section>
+        
+        <section id="installation">
+            <h2>Installation</h2>
+            <p>To install PureHindiJS, use npm:</p>
+            <pre><code>npm install purehindijs</code></pre>
+            
+             <h3>CDN Installation</h3>
+            <p>Alternatively, you can include PureHindiJS directly in your HTML using a CDN:</p>
+            <pre><code>&lt;script src="https://cdn.jsdelivr.net/npm/purehindijs@1.0.1/index.min.js"&gt;&lt;/script&gt;</code></pre>
+            
+            
+            
+        </section>
+        
+        <section id="usage">
+            <h2>Usage</h2>
+            <p>Import the <code>runHindiScript</code> function from the package:</p>
+            <pre><code>const { runHindiScript } = require('purehindijs');</code></pre>
+            
+            <p>Then, you can use it to run Hindi code:</p>
+            <pre><code>const hindiCode = `
+यह संख्या = 5;
+लिखो("संख्या है: " + संख्या);
+`;
+
+runHindiScript(hindiCode);</pre>
+        </section>
+        
+
+        <section id="usage">
+            <h2>Usage</h2>
+            <p>Import the <code>runHindiScript</code> function from the package:</p>
+            <pre><code>const { runHindiScript } = require('purehindijs');</code></pre>
+            <p>Then, you can use it to run Hindi code:</p>
+            <pre><code>const hindiCode = `
+यह संख्या = 5;
+लिखो("संख्या है: " + संख्या);
+`;
+
+runHindiScript(hindiCode);</code></pre>
+        </section>
+
+        <section id="keywords">
+            <h2>Keywords</h2>
+
+            <div class="keyword-section">
+                <h3>यह (const)</h3>
+                <p>Use <code>यह</code> to declare a constant in PureHindiJS.</p>
+                <pre><code>यह संख्या = 10;</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>चर (var)</h3>
+                <p>Use <code>चर</code> to declare a variable in PureHindiJS.</p>
+                <pre><code>चर नाम = "राम";</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>ये (let)</h3>
+                <p>Use <code>ये</code> to declare a block-scoped variable in PureHindiJS.</p>
+                <pre><code>ये उम्र = 25;</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>कार्य (function)</h3>
+                <p>Use <code>कार्य</code> to define a function in PureHindiJS.</p>
+                <pre><code>कार्य जोड़ना(a, b) {
+    लौटाओ a + b;
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>अगर (if)</h3>
+                <p>Use <code>अगर</code> to make conditional statements in PureHindiJS.</p>
+                <pre><code>अगर (संख्या > 10) {
+    लिखो("संख्या 10 से बड़ी है");
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>वरना (else)</h3>
+                <p>Use <code>वरना</code> to define the alternative block of code in an if-else statement.</p>
+                <pre><code>अगर (संख्या > 10) {
+    लिखो("संख्या 10 से बड़ी है");
+} वरना {
+    लिखो("संख्या 10 से छोटी या बराबर है");
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>के_लिए (for)</h3>
+                <p>Use <code>के_लिए</code> to create loops in PureHindiJS.</p>
+                <pre><code>के_लिए (चर i = 0; i < 5; i++) {
+    लिखो(i);
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>जबतक (while)</h3>
+                <p>Use <code>जबतक</code> to create a while loop in PureHindiJS.</p>
+                <pre><code>यह i = 0;
+जबतक (i < 5) {
+    लिखो(i);
+    i++;
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>स्विच (switch)</h3>
+                <p>Use <code>स्विच</code> to handle multiple conditions in PureHindiJS.</p>
+                <pre><code>स्विच (दिन) {
+    मामला 1:
+        लिखो("सोमवार");
+        ब्रेक;
+    मामला 2:
+        लिखो("मंगलवार");
+        ब्रेक;
+    डिफ़ॉल्ट:
+        लिखो("अन्य दिन");
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>स्थिति (case)</h3>
+                <p>Use <code>स्थिति</code> inside a switch statement to define cases in PureHindiJS.</p>
+                <pre><code>स्विच (दिन) {
+    स्थिति 1:
+        लिखो("सोमवार");
+        ब्रेक;
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>डिफ़ॉल्ट (default)</h3>
+                <p>Use <code>डिफ़ॉल्ट</code> to specify a default case in a switch statement.</p>
+                <pre><code>स्विच (दिन) {
+    डिफ़ॉल्ट:
+        लिखो("अन्य दिन");
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>कोशिश (try)</h3>
+                <p>Use <code>कोशिश</code> to start a try block for error handling.</p>
+                <pre><code>कोशिश {
+    // कोड जो त्रुटि उत्पन्न कर सकता है
+} पकड़ (त्रुटि) {
+    लिखो("त्रुटि:", त्रुटि.message);
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>पकड़ (catch)</h3>
+                <p>Use <code>पकड़</code> to handle errors thrown in a try block.</p>
+                <pre><code>कोशिश {
+    // कोड जो त्रुटि उत्पन्न कर सकता है
+} पकड़ (त्रुटि) {
+    लिखो("त्रुटि:", त्रुटि.message);
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>अंततः (finally)</h3>
+                <p>Use <code>अंततः</code> to define a block of code that always executes after try and catch.</p>
+                <pre><code>कोशिश {
+    // कोड जो त्रुटि उत्पन्न कर सकता है
+} पकड़ (त्रुटि) {
+    लिखो("त्रुटि:", त्रुटि.message);
+} अंततः {
+    लिखो("यह अंततः ब्लॉक है");
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>लौटा (return)</h3>
+                <p>Use <code>लौटा</code> to return a value from a function.</p>
+                <pre><code>कार्य जोड़ना(a, b) {
+    लौटाओ a + b;
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>लिखो (console.log)</h3>
+                <p>Use <code>लिखो</code> to output data to the console.</p>
+                <pre><code>लिखो("नमस्ते, दुनिया!");</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>सत्य (true)</h3>
+                <p>Use <code>सत्य</code> for boolean true values.</p>
+                <pre><code>अगर (सत्य) {
+    लिखो("सत्य है");
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>असत्य (false)</h3>
+                <p>Use <code>असत्य</code> for boolean false values.</p>
+                <pre><code>अगर (असत्य) {
+    लिखो("असत्य है");
+} वरना {
+    लिखो("सत्य है");
+}</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>वस्तु (object)</h3>
+                <p>Use <code>वस्तु</code> to define objects.</p>
+                <pre><code>यह व्यक्ति = { नाम: "राम", आयु: 25 };</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>सूची (array)</h3>
+                <p>Use <code>सूची</code> to create arrays.</p>
+                <pre><code>यह अंक = [1, 2, 3, 4, 5];</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>मानचित्र (map)</h3>
+                <p>Use <code>मानचित्र</code> to create a Map object, which holds key-value pairs.</p>
+                <pre><code>यह फल = नया मानचित्र();
+फल.set('सेब', 50);
+फल.set('केला', 30);</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>समूह (set)</h3>
+                <p>Use <code>समूह</code> to create a Set object, which stores unique values.</p>
+                <pre><code>यह संख्या = नया समूह([1, 2, 3, 4, 5]);</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>प्राप्त (get)</h3>
+                <p>Use <code>प्राप्त</code> to retrieve values from objects or maps.</p>
+                <pre><code>यह व्यक्ति = { नाम: "राम", आयु: 25 };
+लिखो(व्यक्ति.प्राप्त नाम);</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>सेट (set)</h3>
+                <p>Use <code>सेट</code> to set values in objects or maps.</p>
+                <pre><code>व्यक्ति.सेट नाम = "श्याम";</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>नया (new)</h3>
+                <p>Use <code>नया</code> to create new instances of objects or classes.</p>
+                <pre><code>यह काल = नया दिन();</code></pre>
+            </div>
+
+            <div class="keyword-section">
+                <h3>इनपुट (prompt)</h3>
+                <p>Use <code>इनपुट</code> to get user input from the console.</p>
+                <pre><code>यह नाम = इनपुट('कृपया अपना नाम दर्ज करें:');</code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="social-icons">
+        <a href="https://github.com/Ritik-Gautam" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg" alt="GitHub">
+        </a>
+        <a href="https://instagram.com/ritikgautam1845" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/instagram.svg" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com/@F-Flames" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/youtube.svg" alt="YouTube">
+        </a>
+    </div>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+</footer>
+
+    <script src="scripts.js"></script>
+    <script>
+          document.addEventListener('DOMContentLoaded', () => {
+    // Function to copy text to clipboard
+    function copyCode(codeElement) {
+        const textArea = document.createElement('textarea');
+        textArea.value = codeElement.textContent;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textArea);
+        alert('Code copied to clipboard!');
+    }
+
+    // Add event listener for double-click on code blocks
+    document.querySelectorAll('pre code').forEach(codeElement => {
+        codeElement.addEventListener('dblclick', () => copyCode(codeElement));
+    });
+});
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
